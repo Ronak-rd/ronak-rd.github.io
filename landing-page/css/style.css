@@ -7,85 +7,194 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
     vertical-align: baseline;
 }
 
 /* Setting up the properties */
 *:after,
 *:before {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-p, h1, h2, h3, h4, main, aside, footer {
-    font-size: 1.1rem;
+p,
+h1,
+h2,
+h3,
+h4,
+main,
+aside,
+footer {
+    font-size: 1.4rem;
     margin: 0 0 0 0;
     line-height: 1.5rem;
     margin-bottom: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
 /* Desiginiing the mobile view to very first */
 
 body {
-    width: 90%;
+    width: 100%;
     background-color: #f7f7ff;
-    color: #333131; 
+    color: #333131;
     font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
     margin: auto;
     align-content: center;
 }
 
+/* giving width the body.  */
+.wrapper {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
 /* giving layout to the H1 */
 
 h1 {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
     font-size: 85px;
     font-weight: bold;
     line-height: 6.5rem;
+    margin-bottom: 5px;
 }
 
+/* giving layout to the H2*/
 h2 {
-    font-size: 32px;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    font-size: 34px;
     line-height: 2.4rem;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+/* giving layout to main bannner image*/
+.main-banner img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: auto;
 }
 
 /* seeting up the contact or register form */
 
-form {
-    background-color: white;
+.apply-form {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    max-width: 380px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 1.4rem;
+}
+
+/* giving layout to the form here.  */
+
+form.z {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    background-color: #FFFFFF;
     border: none;
     border-radius: 20px;
     box-shadow: 2px 2px#333131;
-    padding: 10px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
+/* custom checkboc */
 #terms[type="checkbox"] {
     position: relative;
     vertical-align: middle;
     border: none;
     border-radius: 50px;
-    background-color: #eee;
-    
+    background-color: #F4F4F5;
+
 }
 
 input[type="checkbox"] {
@@ -93,54 +202,56 @@ input[type="checkbox"] {
 }
 
 #terms {
-    align-items: center;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
     position: absolute;
     margin-top: 5px;
     top: 0;
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
-    
-  }
+    background-color: #F4F4F5;
 
-input, textarea {
+}
+
+/* layout of the input form  */
+
+input {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
     align-content: center;
-    background-color: #F5F5F5;
+    background-color: #F4F4F5;
     border: none;
     border-radius: 15px;
     outline: none;
-    width: 370px;
+    width: 100%;
     height: 50px;
     padding: 17px;
     margin-bottom: 12px;
-    font-size: 1.3rem;
-    box-sizing:border-box;
+    font-size: 1.6rem;
+    box-sizing: border-box;
 }
 
-.form-container {
-    text-align: center;
-}
-
-main {
+.form-container main {
     font-size: 60px;
     font-weight: bold;
+    margin-bottom: 3rem;
 }
-label {
-    padding: 25px;
-    postion:
-}
+
+/* desigining the buttton */
 
 button {
     margin: auto;
     border: none;
     border-radius: 15px;
-    width: 370px;
+    width: 100%;
     height: 60px;
-    background-color: #57eeab ;
+    background-color: #57eeab;
     font-weight: bold;
     font-size: 2.2rem;
     margin-top: 15px;
+}
+
+.extras p {
+    font-size: 1.2rem;
 }
 
 form a {
@@ -148,9 +259,261 @@ form a {
     text-decoration: none;
 }
 
+/* desiginig the footer  */
 
-    
+footer {
+    padding: 0.3rem 3rem;
+    background-color: #fffd8c;
+    margin-top: 3rem;
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 
+h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* form of the footer designed here  */
+#calculate {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input#hours {
+    width: 85%;
+}
+
+.hours-footer {
+    width: 30%;
+    flex-grow: 1;
+}
+
+.city-footer {
+    width: 70%;
+    flex-grow: 1;
+}
+
+.calculate {
+    background-color: #FF8480;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+/* desigining the icon images */
+
+.media-icons {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.media-icons img {
+    border-radius: 30%;
+}
 
 
+/* Starting the layout of the tablet view using the media query */
+
+@media (min-width: 35rem) {
+
+    /* basic design of the paragraph */
+    p {
+        font-size: 1.5rem;
+    }
+
+    /* giving width the wrapper  */
+    .wrapper {
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 6rem;
+        line-height: 7.3rem;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    /* sizing the main banner image  */
+    .main-banner img {
+        width: 450px;
+    }
+
+    .apply-form {
+        max-width: 700px;
+    }
+
+    form.z {
+        padding: 10px 35px;
+    }
+
+    .form-container main {
+        margin-bottom: 1rem;
+    }
+
+
+    /* refrernce taken by https://www.w3schools.com/howto/howto_css_placeholder.asp to change the place holder color */
+
+    ::placeholder {
+        color: #9B9B9B;
+        opacity: 1;
+        /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #9B9B9B;
+    }
+
+    ::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #9B9B9B;
+    }
+
+    .extras {
+        margin: auto;
+    }
+
+    h3 {
+        font-size: rem;
+    }
+
+    /* form of the footer desgined here  */
+    input#hours {
+        width: 95%;
+    }
+
+    input#city {
+        width: 97%;
+    }
+
+    .hours-footer {
+        width: 13%;
+        flex-grow: 1;
+    }
+
+    .city-footer {
+        width: 43%;
+        flex-grow: 1;
+    }
+
+    .calculate {
+        background-color: #FF8480;
+        width: 37%;
+        color: #FFFFFF;
+        margin-top: 0px;
+        height: 50px;
+        font-size: 1.6rem;
+    }
+
+    /* icons designed here  */
+    .media-icons {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+}
+
+/* Starting the layout of the DESKTOP view using the media query */
+
+@media (min-width: 80rem) {
+
+
+    /* here i tried so hard but the layout of the desktop is not woeking out please have alook at it and help me if you can, please tyler */
+
+
+    /* width given here of the body  */
+    .wrapper {
+        display: flex;
+    }
+
+    /* sizing the main banner image */
+    .main-banner img {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    h1 {
+        padding-left: 25px;
+    }
+
+    h2 {
+        width: 100%;
+        align-items: flex-end;
+    }
+    /* sizing here for desktop */
+    .main-banner {
+        margin: center;
+        padding: 20px;
+    }
+
+    .for-desktop {
+        justify-content: flex-end;
+    } 
+
+
+    .form-container main {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    label {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    form.z {
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
+    button {
+        width: 100%;
+        height: auto;
+        font-size: 1.3rem;
+    }
+
+    /* footer designed here  */
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    #calculate {
+        width: 100%;
+    }
+
+    .media-icons {
+        width: 40%;
+        display: flex;
+
+    }
+
+    .media-icons img {
+        justify-content: flex-start;
+    }
+
+}
