@@ -239,6 +239,7 @@ input {
 /* desigining the buttton */
 
 button {
+    font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
     margin: auto;
     border: none;
     border-radius: 15px;
@@ -284,6 +285,7 @@ h3 {
 
 input#hours {
     width: 85%;
+    font-size: 1.2rem;
 }
 
 .hours-footer {
@@ -386,6 +388,7 @@ input#hours {
     /* form of the footer desgined here  */
     input#hours {
         width: 95%;
+        font-size: 1.2rem;
     }
 
     input#city {
