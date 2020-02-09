@@ -383,10 +383,6 @@ input#hours {
         margin: auto;
     }
 
-    h3 {
-        font-size: rem;
-    }
-
     /* form of the footer desgined here  */
     input#hours {
         width: 95%;
@@ -433,39 +429,39 @@ input#hours {
     /* here i tried so hard but the layout of the desktop is not woeking out please have alook at it and help me if you can, please tyler */
 
 
-    /* width given here of the body  */
+    /* width given here of the body 
     .wrapper {
         display: flex;
     }
 
     /* sizing the main banner image */
-    .main-banner img {
+    /* .main-banner img {
         margin: auto;
         display: flex;
         flex-direction: column;
         width: 400px;
-    }
+    } */
 
-    h1 {
+    /* h1 {
         padding-left: 25px;
-    }
+    } */
 
-    h2 {
+    /* h2 {
         width: 100%;
         align-items: flex-end;
     }
     /* sizing here for desktop */
-    .main-banner {
+    /* .main-banner {
         margin: center;
         padding: 20px;
     }
 
     .for-desktop {
         justify-content: flex-end;
-    } 
+    }  */ 
 
 
-    .form-container main {
+    /* .form-container main {
         font-size: 1.8rem;
         text-align: center;
     }
@@ -492,17 +488,17 @@ input#hours {
         width: 100%;
         height: auto;
         font-size: 1.3rem;
-    }
+    } */
 
     /* footer designed here  */
-    footer {
+    /* footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-
     }
 
     #calculate {
+        flex-grow: 3;
         width: 100%;
     }
 
@@ -514,6 +510,59 @@ input#hours {
 
     .media-icons img {
         justify-content: flex-start;
+    }  */
+    .wrapper {
+        display: flex;
     }
+
+    header {
+        padding-bottom: 50px;
+    }
+    .binder {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-bottom: 200px;
+    }
+
+    .main-banner img {
+         display: flex;
+         width: 600px;
+    }
+
+    .main-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+    .apply-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form.z {
+        width: 400px;
+        margin-top: 200px;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    .feet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .media-icons {
+        justify-content: space-evenly;
+        width: 50%;
+
+    }
+
+
+
 
 }
