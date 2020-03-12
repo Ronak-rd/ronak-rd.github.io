@@ -125,6 +125,7 @@ footer {
 /* all the code from here is for the font and for the nav bar */
 body {
     font-family: 'Raleway';
+    color: #3C3B3A;
 }
 
 a.current {
@@ -145,11 +146,10 @@ a.current {
     height: 94.48px;
 }
 
-a {
+nav ul a {
     color: white;
     list-style-type: none;
     display: flex;
-    flex-direction: row;
     text-decoration: none;
     justify-content: center;
     font-size: 1.2rem;
@@ -167,6 +167,11 @@ a {
     margin: auto;
 }
 
+/* hiding the scrolldown button for the mobile view*/
+.hidden, .tablet figcaption {
+    display: none;
+}
+
 h1 {
     font-weight: bold;
     font-size: 3rem;
@@ -181,11 +186,12 @@ h2 {
 .activity figcaption {
     color: #26A682;
     padding: 10px;
+    text-align: center;
     
 }
 
 .activity img {
-    width: 84px;
+    width: 100%;
     height: 78px;
 }
 
@@ -223,7 +229,8 @@ input[value="Get Started"] {
 }
 .study img {
     margin-top: 0.5rem;
-    width: 85%;
+    width: 100%;
+    margin-bottom: 0px;
 }
 
 body.discover {
@@ -231,7 +238,8 @@ body.discover {
 }
 
 .discover img {
-    width: 475px;
+    margin-top: 0px;
+    width: 100%;
     height: 300px;
 }
 
@@ -242,7 +250,7 @@ h3 {
     margin-bottom: 0;
 }
 
-h4{
+h4 {
     font-size: 1.6rem;
     color: #26A682;
     margin-top: 0.6rem;
@@ -251,6 +259,7 @@ h4{
 
 .discoverpara p {
     margin-top: 0.1rem;
+    font-size: 1.5rem;
 }
 
 .second-button {
@@ -272,7 +281,7 @@ h4{
     font-size: 1.6rem;
 }
 
-input.second-button:hover {
+.second-button input:hover {
     box-shadow: 0 10px 18px 0 #124A3A;
     color: black;
 }
@@ -289,6 +298,7 @@ body.third-wrapper {
     color: white;
 }
 .simon img {
+    display: flex;
     width: 15rem;
     border-radius: 50%;
     margin: auto;
@@ -318,6 +328,263 @@ body.third-wrapper {
     margin-bottom: 2rem;
 }
 
+body.girl {
+    width: 100%;
+}
+
+.girl img {
+    width: 100%;
+}
+
+.fourth-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.fourth-wrapper p {
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.third-button input {
+    width: 45%;
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 1.6rem;
+    margin-bottom: 2rem;
+    background-color: #26A682;
+    box-shadow: 0 3px 5px 0 #124A3A;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.third-button input:hover {
+    box-shadow: 0 10px 18px 0 #124A3A;
+    color: black;
+}
+
+.third-button {
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+footer {
+    background-color: #3C3B3A;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconsnall {
+    background-color: #3C3B3A;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+footer h3 {
+    color: white;
+    font-style: normal;
+    text-align: center;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.backtotop img {
+    width: 75%; 
+}
+.backtotop a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+}
+
+/* starting design of the home page in tablet */
+@media (min-width:35rem) {
+
+    h1, h2, h3, h4, h5 {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .activity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .activity figure {
+        display: table;
+    }
+    .activity img {
+        width: 65px;
+    }
+
+   .activity figcaption {
+       display: table-row;
+       text-align: left;
+   }
+
+   input.first-button {
+       width: 40%;
+   }
+
+   input[value="Get Started"] {
+       font-size: 1.8rem;
+   }
+
+   .onebutton {
+       display: flex;
+       justify-content: center;
+   }
+
+   .study {
+       display: flex;
+       justify-content: center;
+   }
+   .study img {
+       width: 72%;
+   }
+
+   .tablet , .hidden, .tablet figcaption {
+       display: flex;
+       justify-content: center;
+   }
+
+   .tablet img {
+       width: 100%;
+   }
+
+   .tablet a {
+       color: #3C3B3A;
+       text-decoration: none;
+       padding: 15px;
+   }
+
+   .discover img {
+       height: 350px;
+   }
+
+   .simon {
+       flex-direction: row;
+       justify-content: space-between;
+       padding: 15px;
+   }
+   .holder {
+       display: flex;
+       flex-direction: column;
+       width: 45%;
+       padding: 0 50px;
+   }
+
+   .holder h3, h4 {
+        justify-content: flex-start;
+        margin-top: 0;
+   }
+
+   .girl img {
+    width: 100%;  
+   }
+}
+
+@media (min-width: 75rem) {
+    .all-content {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px;
+    }
+
+    .desktop h1 {
+        font-size: 3.2rem;
+    }
+
+    .activity {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+    }
+    .activity img {
+        width: 50px;
+        margin-left: 10px;
+    }
+
+    .study {
+        width: 100%;
+    }
+    .study img {
+        width: 100%;
+    }
+
+    .desktop {
+        width: 80%;
+        margin-right: 5rem;
+    }
+
+    .onebutton {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .first-flex {
+        display: flex;
+        background-color: #F2F2F2;
+        padding: 35px 55px;
+    }
+
+    .first-flex img {
+        height: 80%;
+        
+    }
+    .first-flex h3 {
+        margin-top: 0rem;
+    }
+
+    .first-flex input {
+        margin-top: 0px;
+    }
+    .second-wrapper {
+        margin-left: 5rem;
+        width: 60%;
+        margin-top: 35px;
+    }
+
+    .discover {
+        margin-top: 25px;
+        width: 70%;
+    }
 
 
-
+}

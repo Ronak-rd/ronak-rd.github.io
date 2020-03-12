@@ -4,123 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/logo.svg" sizes="any" type="image/svg+xml"/>
+    <link rel="shortcut icon" href="images/favicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="stylesheet" href="styles/style.css">
     <title>ARC</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="images/logo.svg" alt="logo-ARC">
+    <div id="scroll">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo-ARC">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="current" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a class="current" href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </div>
     <div class="all-content">
-        <h1>Discover Your ARC.</h1>
-        <h2>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</h2>
+        <div class="desktop">
+            <h1>Discover Your ARC.</h1>
+            <h2>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!
+            </h2>
 
-        <div class="activity">
-            <figure>
-                <img src="images/awesome-bowling-ball.svg" alt="bowling-ball" >
-                <figcaption>Bowling</figcaption>
-            </figure>
+            <div class="activity">
+                <figure>
+                    <img src="images/awesome-bowling-ball.svg" alt="bowling-ball">
+                    <figcaption>Bowling</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/map-climbing.svg" alt="man-climbing">
-                <figcaption>Rock climbing</figcaption>
-            </figure>   
-             
-            <figure>
-                <img src="images/map-gym.svg" alt="dumbell">
-                <figcaption>Fitness Center</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/map-climbing.svg" alt="man-climbing">
+                    <figcaption>Rock climbing</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/awesome-basketball-ball.svg" alt="basket-ball">
-                <figcaption>Indoor Court</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/map-gym.svg" alt="dumbell">
+                    <figcaption>Fitness Center</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/awesome-basketball-ball.svg" alt="basket-ball">
+                    <figcaption>Indoor Court</figcaption>
+                </figure>
+            </div>
+            <div class="onebutton">
+                <input type="button" value="Get Started" class="first-button">
+            </div>
         </div>
-        <div class="1button">
-            <input type="button" value="Get Started" class="first-button">
-        </div>
-        
         <div class="study">
             <img src="images/discover.svg" alt="girl studying on the books">
         </div>
-    </div>   
+    </div>
+    <div class="tablet">
+        <a href="#down">
+            <figure>
+                <figcaption>scroll</figcaption>
+                <img src="icons/up.svg" alt="donwbutton" class="hidden">
 
+            </figure>
+        </a>
+    </div>
+    <div class="first-flex">
         <div class="discover">
             <img src="images/school.jpg" alt="photo of Guys on the mountain">
         </div>
-    <div class="second-wrapper">   
-        <div class="discoverpara">
-            <h3>Discover.</h3>
-            <h4>Algonquin College</h4>
-            <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario,
-                Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario, Western
-                Quebec, and Upstate New York.</p>
-        </div>
-        <div class="second-button">
-            <input type="button" value="Learn More">
+        <div class="second-wrapper">
+            <div class="discoverpara">
+                <h3>Discover.</h3>
+                <h4>Algonquin College</h4>
+                <p>of Applied Arts and Technology is a publicly funded English-language college located in Ottawa, Ontario,
+                    Canada. The college serves the National Capital Region and the outlying areas of Eastern Ontario,
+                    Western
+                    Quebec, and Upstate New York.</p>
+            </div>
+            <div class="second-button">
+                <input type="button" value="Learn More">
+            </div>
         </div>
     </div>    
     <div class="third-wrapper">
         <div class="simon">
-            <img src="images/simon.jpg" alt="SA head Dijanelle Simon"/>       
-            <h3>Dijanelle Simon</h3>
-            <h4>SA President</h4>
+            <div class="holder">
+                <img src="images/simon.jpg" alt="SA head Dijanelle Simon" />
+                <h3>Dijanelle Simon</h3>
+                <h4>SA President</h4>
+            </div>
             <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater
-                number of students to participate in physical and social activity. The Students' Association is committed to
+                number of students to participate in physical and social activity. The Students' Association is
+                committed to
                 and focused on programming that results in our students taking person ownership for their health."
             </p>
         </div>
-    </div> 
-        <div class="fourth-content">
-            <div class="girl">
-                <img src="images/entertainment.jpg" alt="Beer glass with girl"/>
-            </div>
-            <h3>Discover.</h3>
-            <h4>The entertainment</h4>
-            <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of
-                events. Now with the coming of the ARC facility, not only will it be providing more space for the students
-                to study, but it will also be bringing in more room for late-night entertainment.</p>
-            <div class="button">
-                <h2>Learn More</h2>
+        <div class="girl">
+            <img src="images/entertainment.jpg" alt="Beer glass with girl" />
+        </div>
+    </div>
+    <div class="fourth-wrapper">
+        <h3>Discover.</h3>
+        <h4>The entertainment</h4>
+        <p>at Algonquin College is endless. We currently have the Algonquin Commons Theatre where we host a variety of
+            events. Now with the coming of the ARC facility, not only will it be providing more space for the students
+            to study, but it will also be bringing in more room for late-night entertainment.</p>
+        <div class="third-button">
+            <input type="button" value="Learn More">
+        </div>
+    </div>
+    <footer>
+        <div id="down">
+            <div class="footer">
+                <div class="footer-wrapper">
+                    <h3>Follow us</h3>
+                    <div class="iconsnall">
+
+                        <div class="media-icons">
+                            <div>
+                                <img src="icons/facebook.svg" alt=" icon Facebook" />
+                            </div>
+                            <div>
+                                <img src="icons/instagram.svg" alt=" icon Instagram" />
+                            </div>
+                            <div>
+                                <img src="icons/twitter.svg" alt=" icon Twitter" />
+                            </div>
+                            <div>
+                                <img src="icons/youtube.svg" alt=" icon Youtube" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="backtotop">
+                    <a href="#scroll">
+                        <figure>
+                            <img src="icons/arrow.svg" alt="backtotop" />
+                            <figcaption>back to top</figcaption>
+                        </figure>
+                    </a>
+                </div>
             </div>
         </div>
-    <footer>
-        <div class="footer">
-            <div class="media-icons">
-                <p>Follow us</p>
-                <div>
-                    <img src="icons/facebook.svg" alt=" icon Facebook"/>
-                </div>
-                <div>
-                    <img src="icons/instagram.svg" alt=" icon Instagram"/>
-                </div>
-                <div>
-                    <img src="icons/twitter.svg" alt=" icon Twitter"/>
-                </div>
-                <div>
-                    <img src="icons/youtube.svg" alt=" icon Youtube"/>
-                </div>
-            </div>
-            <div class="backtotop">
-                <a href="#">
-                    <p>Back to top</p>
-                    <img src="icons/arrow.svg" alt="backtotop"/>
-                </a>
-            </div>
-        </div>    
     </footer>
 </body>
 
