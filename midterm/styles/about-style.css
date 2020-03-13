@@ -374,6 +374,33 @@ footer h3 {
     font-size: 0.7rem;
 }
 
+@media (min-width:35rem) {
+
+    h1, h2, h3, h4, h5 {
+        font-size: 2.9rem;
+    }
+
+    .first p{
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    .construction {
+        width: 80%;
+        margin: auto;
+    }
+}
 
 
 
