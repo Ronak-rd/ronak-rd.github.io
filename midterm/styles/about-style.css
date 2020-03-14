@@ -97,7 +97,6 @@ video {
 }
 
 /* Setting up the properties */
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 *:after,
 *:before {
@@ -157,6 +156,10 @@ nav ul a {
     font-size: 1.2rem;
     padding: 1rem;
 }
+nav ul a:hover {
+    transform: scale(2);
+    transition: 2s;
+}
 
 /* giving width and proper sizing to the content */
 .all-content {
@@ -192,6 +195,12 @@ h3 {
     margin-bottom: 2rem;
 }
 
+.construction img:hover {
+    transform: rotatex(360deg);
+    transition: 4s;
+}
+
+
 body .main-about{
     width: 100%;
 }
@@ -203,7 +212,7 @@ body .main-about{
     width: 100%;
 }
 
-.fifth img, .sixth img, .seventh img, .eight img {
+.hidden {
     display: none;
 }
 
@@ -313,8 +322,9 @@ body .main-about{
     height: 99%;
     display: block;
     z-index: 0;
-    background-color: #26A682;
-    opacity: 0.5;
+    background: #26A682;
+    mix-blend-mode: multiply;
+    /* opacity: 0.5; */
 }
 
 .centered {
@@ -327,29 +337,42 @@ body .main-about{
 
 footer {
     background-color: #3C3B3A;
-    margin-top: 0px;
 }
 
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    position: relative;
+    animation-duration: 2s;
+    animation-name: jump;
 }
+
+@keyframes jump {
+    0% {
+      transform: scale(0.4);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
 
 .footer-wrapper {
     display: flex;
     flex-direction: column;
 }
 
-.iconsnall {
+/* .iconsnall {
     background-color: #3C3B3A;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 0.5rem;
     flex-wrap: nowrap;
-}
+} */
 
 footer h3 {
     color: white;
@@ -374,33 +397,162 @@ footer h3 {
     font-size: 0.7rem;
 }
 
-@media (min-width:35rem) {
+.backtotop {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
 
+@media (min-width:35rem) {
+    /* styling the propeties */
     h1, h2, h3, h4, h5 {
         font-size: 2.9rem;
     }
 
-    .first p{
+    /* styling the p */
+    .first p {
         font-size: 1.8rem;
     }
-
+    /* designing then navigation */
     .navbar {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
+    /* designing then navigation */
     nav ul {
         display: flex;
         flex-direction: row;
         list-style: none;
     }
-
+/* designing then image according to the view */
     .construction {
         width: 80%;
         margin: auto;
     }
+    /* adding text on the image */
+    .text-on-image {
+        width: 100%;
+        height: 250px;
+        overflow: hidden;
+    }
+/* editing the image  */
+    .text-on-image img {
+        width: 100%;
+        /* height: 400px; */
+        margin: -175px 0 0 -00px;
+    }
+
+    .text-on-image:before {
+        height: 100%;
+    }
+    
+
+    .hidden {
+        display: block; 
+    }
+
+    .eight h3, .seventh h3, .content-wrapper h3, .fifth h3 {
+        color: #26A682;
+        font-size: 1.9rem;
+        margin-top: 0rem;
+        margin-bottom: 0px;
+        
+    }
+    .eight img, .seventh img, .content-wrapper img, .fifth img {
+        width: 100%;
+        height: 395px;
+        object-fit: cover;
+        margin: auto;
+    }
+    .seventh, .fifth {
+        display: grid;
+        grid-template-columns: 37% 60%;
+        grid-gap: 4%;
+    }
+
+    .content-wrapper, .eight {
+        display: grid;
+        grid-template-columns: 60% 37%;
+        grid-gap: 4%;
+    }
+
+    .binder-wrap{
+        display: grid;
+        grid-template-columns: 3fr 2.4fr;
+    }
+
+    .thank-you h1 {
+        font-size: 2.8rem;
+    }
+    .img-company {
+        width: 70%;
+        margin: auto;
+    }
+    .img-company img {
+        width: 50%;
+    }
+
+    .all-content {
+        width: 90%;
+    }
+    
 }
+
+@media (min-width: 75rem) {
+    .all-content {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 35px;
+    }
+
+    .first {
+        padding: 25px;
+    }
+
+    .first p {
+        font-size: 1.6rem;
+    }
+    .construction img {
+        width: auto;
+        padding-left: 25px;
+    }
+
+
+    .second , .third, .fourth {
+        padding: 45px;
+        font-size: 1.6rem;
+    }
+    .second p, .third p, .fourth p { 
+        margin-top: 10px;
+        font-size: 1.3rem;
+    }
+
+    .text-on-image {
+        height: 240px;
+    }
+    .text-on-image img {
+        width: 100%;
+        /* height: 400px; */
+        margin: -375px 0 0 -00px;
+    }
+
+    .img-company {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .img-company img {
+        padding: 25px 45px;
+        height: 150px;
+         width: 40%;
+    }
+
+}    
 
 
 
