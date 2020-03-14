@@ -127,7 +127,7 @@ body {
     font-family: 'Raleway';
     color: #3C3B3A;
 }
-
+/* just to bold the active page */
 a.current {
     font-weight: bold;
 }
@@ -141,12 +141,13 @@ a.current {
     display: flex;
     justify-content: center;
 }
-
+/* sizing the logo image */
 .logo img {
     width: 188.04px;
     height: 94.48px;
 }
 
+/* nav styled here */
 nav ul a {
     color: white;
     list-style-type: none;
@@ -169,7 +170,7 @@ nav ul a:hover {
     width: 80%;
     margin: auto;
 }
-
+/* basic properties to the elemets like h1, h2, h3, p */
 h1 {
     font-size: 3.6rem;
     line-height: 4rem;
@@ -195,7 +196,7 @@ h3 {
     height: auto;
 }
 
-
+/* styling the form */
 .apply-form {
     width: 90%;
     margin: auto;
@@ -230,7 +231,7 @@ textarea {
     font-size: .2rem;
     color: #3C3B3A;
 }
-
+/* sizng it accordingly to the mockup */
 .apply-form input, textarea {
     width: 97%;
     display: flex;
@@ -253,7 +254,7 @@ textarea {
     border-radius: 15px;
     font-family: 'Raleway';
 }
-
+/* desigining the button of the form */
 .apply-form button {
     width: 100%;
     height: 3rem;
@@ -267,7 +268,7 @@ textarea {
     border: none;
     outline: none;
  }
-
+/* location used in here */
  .location {
      margin-bottom: 20px;
  }
@@ -288,7 +289,7 @@ textarea {
      margin-bottom: 5px;
      font-size: 1.3rem;
  }
-
+/* loaction-map styled here */
  .location-map {
      width: 100%;
      margin-bottom: 0px;
@@ -299,10 +300,12 @@ textarea {
      width: 100%;
  }
 
+ /* footer styled here */
  footer {
     background-color: #3C3B3A;
 }
 
+/* adding flex to the footer */
 .footer {
     display: flex;
     flex-direction: row;
@@ -312,7 +315,7 @@ textarea {
     animation-duration: 2s;
     animation-name: jump;
 }
-
+/* adding the animation to the footer */
 @keyframes jump {
     0% {
       transform: scale(0.4);
@@ -362,7 +365,7 @@ footer h3 {
     text-decoration: none;
     font-size: 0.7rem;
 }
-
+/* back to top button postion absolutute */
 .backtotop {
     position: absolute;
     right: 20px;
@@ -372,11 +375,11 @@ footer h3 {
 /* starting design of the home page in tablet */
 
 @media (min-width:35rem) {
-
+/* general properties designed here */
     h1, h2, h3, h4, h5 {
         font-size: 1.8rem;
     }
-
+/* navigation in column here */
     .navbar {
         display: flex;
         flex-direction: row;
@@ -388,7 +391,7 @@ footer h3 {
         flex-direction: row;
         list-style: none;
     }
-
+/* images of contact us resized here */
     .contact img {
         display: flex;
         width: 80%;
@@ -398,7 +401,7 @@ footer h3 {
         display: flex;
         flex-direction: row-reverse;
     }
-    
+    /* from recalibrated here */
     .apply-form button {
         margin-top: 25px;
         width: 40%;
@@ -420,14 +423,17 @@ footer h3 {
     }
 }
 
+
+/* desktop view designed here */
 @media (min-width: 75rem) {
+    /* basic propeties here */
     .all-content {
         width: 90%;
         display: flex;
         margin: auto;
         justify-content: center;
     }
-
+/* h1 desihnedc here */
     .first h1 {
         font-size: 3.2rem;
         padding: 25px;
@@ -441,6 +447,7 @@ footer h3 {
     .first img {
         padding:  4rem 25px;
     }
+    /* added here the flex */
     .first-flex {
         width: 100%;
         height: 100%;
@@ -459,7 +466,7 @@ footer h3 {
         width: 60%
     }
 
-
+/* adding some more space on the form */
     .first, .apply-form {
         padding: 16px;
     }
@@ -473,11 +480,11 @@ footer h3 {
     .form-container {
         padding: 18px;
     }
-
+/* dix of map location resized acc. */
     .location {
         width: 40%;
     }
-
+/* map resized here */
     .location-map {
         width: 60%;
     }

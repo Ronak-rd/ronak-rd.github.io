@@ -227,6 +227,9 @@ animation: dance 5s infinite;
 
 }
 
+
+/* animation added here */
+
 @keyframes dance {
     from {left: 0px;}
     to {left: 200px;}
@@ -399,6 +402,7 @@ body.girl {
     font-size: 1.4rem;
 }
 
+/* designing the button for learn more here */
 .third-button input {
     width: 45%;
     height: 3rem;
@@ -413,6 +417,7 @@ body.girl {
     font-size: 1.6rem;
 }
 
+/* adding some hover effect */
 .third-button input:hover {
     box-shadow: 0 10px 18px 0 #124A3A;
     color: black;
@@ -424,10 +429,13 @@ body.girl {
     
 }
 
+
+/* styling the footer from here */
 footer {
     background-color: #3C3B3A;
 }
 
+/* adding flex to it */
 .footer {
     display: flex;
     flex-direction: row;
@@ -438,6 +446,8 @@ footer {
     animation-name: jump;
 }
 
+
+/* added the animation using keyframes here */
 @keyframes jump {
     0% {
       transform: scale(0.4);
@@ -469,6 +479,8 @@ footer h3 {
     text-align: center;
 }
 
+
+/* adding styles to yhe media icons */
 .media-icons {
     display: flex;
     flex-direction: row;
@@ -495,10 +507,11 @@ footer h3 {
 /* starting design of the home page in tablet */
 @media (min-width:35rem) {
 
+    /* basic layout here */
     h1, h2, h3, h4, h5 {
         font-size: 1.8rem;
     }
-
+    /* design the appropriate nav */
     .navbar {
         display: flex;
         flex-direction: row;
@@ -510,6 +523,8 @@ footer h3 {
         flex-direction: row;
         list-style: none;
     }
+
+    /* styling tyhe activity images or icons */
     .activity {
         display: flex;
         flex-direction: row;
@@ -521,7 +536,7 @@ footer h3 {
     .activity img {
         width: 65px;
     }
-
+/* making the contnt and figcation same sixze */
    .activity figcaption {
        display: table-row;
        text-align: left;
@@ -531,10 +546,11 @@ footer h3 {
        width: 40%;
    }
 
+   /* added style to the button */
    input[value="Get Started"] {
        font-size: 1.8rem;
    }
-
+   /* adding flex to the button */
    .onebutton {
        display: flex;
        justify-content: center;
@@ -547,7 +563,7 @@ footer h3 {
    .study img {
        width: 72%;
    }
-
+   /* unhidding the scroll button for the desktop view */
    .tablet , .hidden, .tablet figcaption {
        display: flex;
        justify-content: center;
@@ -562,11 +578,11 @@ footer h3 {
        text-decoration: none;
        padding: 15px;
    }
-
+/* sizing the image here */
    .discover img {
        height: 350px;
    }
-
+/* roundoing the president image */
    .simon {
        flex-direction: row;
        justify-content: space-between;
@@ -588,8 +604,10 @@ footer h3 {
     width: 100%;  
    }
 }
+/* designing the desktop view from here */
 
 @media (min-width: 75rem) {
+    /* basic layout to the elememts */
     .all-content {
         width: 95%;
         display: flex;
@@ -597,7 +615,7 @@ footer h3 {
         justify-content: space-between;
         padding: 35px;
     }
-
+    /* sizing the approportae h1 */
     .desktop h1 {
         font-size: 3.2rem;
         padding: 25px;
@@ -614,6 +632,8 @@ footer h3 {
         width: 90%;
         padding: 15px;
     }
+
+    /* sixzing the image */
     .activity img {
         width: 50px;
         margin-left: 10px;
@@ -635,7 +655,7 @@ footer h3 {
         width: 80%;
         margin-right: 5rem;
     }
-
+/* styling the button to th end */
     .onebutton {
         display: flex;
         flex-direction: row;
@@ -647,7 +667,7 @@ footer h3 {
         background-color: #F2F2F2;
         padding: 35px 55px;
     }
-
+    /* image sizing here */
     .first-flex img {
         height: 80%;
         
@@ -669,14 +689,14 @@ footer h3 {
         margin-top: 25px;
         width: 70%;
     }
-
+    /* basic layout to add space between the elemets */
     .holder {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
-
+/* this is just to add flex */
     .justtoflex {
         width: auto;
         display: flex;
@@ -689,6 +709,7 @@ footer h3 {
         align-items: center;
         margin-top: 0rem;
     }
+/* resizng the image of president */
 
     .simon img {
         width: 35%;
@@ -714,7 +735,6 @@ footer h3 {
         padding: 25px;
     }
 
-
-
-
 }
+
+/* tried my best here to get this very similar */
