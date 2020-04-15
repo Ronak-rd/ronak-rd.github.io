@@ -186,13 +186,13 @@ header .logo img {
     margin-top: 100px;
     position: absolute;
     left: 25px; 
-    top: 50px;
+    top: 80px;
     z-index: 999; 
     opacity: 1;
 }
 
 .text-on-banner h1 {
-    font-size: 6.3rem;
+    font-size: 5.5rem;
     font-weight: bold;
 }
 
@@ -293,14 +293,19 @@ header .logo img {
 
 .content-design {
     background-color: rgb(21, 52, 85);
+    
 }
 
 .design {
-    font-size: 5rem;
+    font-size: 3.2rem;
 } 
 
 .ux {
     background-color: rgb(196, 235, 255);
+}
+
+.ux-txt, .cms-txt {
+    font-size: 3.2rem;
 }
 
 .video {
@@ -309,7 +314,8 @@ header .logo img {
 }
 
 .video-text {
-    font-size: 4.7rem;
+    font-size: 3.2rem;
+    text-align: center;
 }
 
 .cms {
@@ -386,8 +392,8 @@ header .logo img {
     right: 0;
     top: 0;
     border: none;
-    border-top: 3px solid black;
-    border-radius: 0px;
+    border-top: 1.2px solid black;
+    border-radius: 2px;
     background-color: rgb(49, 130, 147);
 }
 
@@ -400,9 +406,22 @@ header .logo img {
     height: 62px;
 }
 
+footer {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* Tablet View */
 
 @media (min-width:45rem) {
+    h3, p {
+        font-size: 1.6rem;
+    }
+
+    .text-on-banner h1 {
+        font-size: 6.5rem;
+        font-weight: bold;
+    }
 
     .banner::before {
         position: absolute;
@@ -417,5 +436,128 @@ header .logo img {
         text-align: center;
     }
 
-     
+    .flex1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 25px;
+    }
+
+    .yeah.about-me {
+        max-width: 45vw;
+        height: 70vw;
+    }
+
+    .about-image {
+        max-width: 45vw;
+        height: 60vw;
+    }
+
+    .button {
+       width: 88%;
+        display: flex;
+        justify-items: center;
+        margin: auto;
+    }
+
+    .recent, .content-design, .ux, .video, .cms {
+        padding-right: 2rem !important;
+        padding-left: 2rem !important;
+    }
+
+    .footer .navbar-collapse {
+        flex-direction: row-reverse;
+        width: 30% !important;
+        flex-grow: 0;
+    }
+
+    .footer .navbar {
+        justify-content: flex-end;
+        justify-content: space-between;
+    }
+    
+
+    footer h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .clips {
+        display: flex;
+    }
+
+}
+
+@media (min-width:75rem) {
+
+    h3, p {
+        font-size: 1.4rem;
+    }
+
+    .banner-media {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 3rem;
+    }
+
+    .yeah.about-me {
+        max-width: 65vw;
+        height: 35vw;
+
+    }
+
+    .about-image {
+        max-width: 45vw;
+        height: 35vw;
+    }
+
+    .button {
+        width: 20%;
+        justify-content: flex-start;
+        margin: 1rem;
+    }
+
+    .flex2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .clips {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ux {
+        max-width: 60vw;
+
+    }
+
+    .video {
+        max-width: 60vw;
+    }
+
+    .cms table {
+        max-width: 70vw;
+        margin: auto;
+        margin-bottom: 1.6rem;
+    }
+
+    footer .media-end {
+        width: 50%;
+        margin: auto;
+    }
+
+    .footer .navbar-collapse {
+        flex-direction: row-reverse;
+        width: 10% !important;
+        flex-grow: 0;
+    }
+
 }
